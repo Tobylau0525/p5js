@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>p5js Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.js"></script>
+
+    <script>
+
+function setup(){
+  createCanvas(800,800, WEBGL); //the size of the canvas and the 
+}
+var value3 = 0   //variable for the color that will be pick ramdomly
+var value2 = 0   
+var value = 0;
+
+function draw(){
+  fill(value,value2,value3)//this will fill the torus of what the variables have.
+  background(255);//this will set the backgroud color 
+  rotateX(frameCount * 0.01); //this will count how many times the code has run to change/rotate the torus 
+  rotateY(frameCount * 0.01); //this will count how many times the code has run to change/rotate the torus 
+ torus(200, 60);//the size of the torus
+
+}
+function keyPressed() {
+
+  value = random(255)//this will randoomly chose a number between 0 to 255
+  value2 = random(255)//this will randoomly chose a number between 0 to 255
+  value3 = random(255)//this will randoomly chose a number between 0 to 255
+  if (value > 256) {
+    value = 0;
+  }//this will reset the value to 0 when it's smaller than 256
+}
+function mouseMoved(){
+  value = value + 3;//this will make the color go lighter
+  value2 = value2 + 3;//this will make the color go lighter
+  value3 = value3 + 3;//this will make the color go lighter        
+  if (value > 255) {
+    value = 0;//this will reset the value to 0 when it's smaller than 255
+    
+    
+  }
+}
+
+    </script>
+</head>
+<body>
+    <div id="code" class="container-fluid">
+        <script src="https://gist-it.appspot.com/github/yatchol6214/p5js/blob/gh-pages/interaction-project.html?footer=0"></script>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(window).bind("load", function() {
+            $('#code').before($('#defaultCanvas0').remove());
+        });
+    </script>
+</body>
+
+
+
+</html>
