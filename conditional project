@@ -52,7 +52,7 @@ function mousePressed(){
 
 <body>
     <div id="code" class="container-fluid">
-        <script src="https://gist-it.appspot.com/github/yatchol6214/p5js/blob/gh-pages/conditional project.html?footer=0"></script>
+        <script src="https://gist-it.appspot.com/github/yatchol6214/p5js/blob/gh-pages/conditionalproject.html?footer=0"></script>
     </div>
 
 
