@@ -22,7 +22,7 @@
     }
 
     function draw() {
-      /* rectangles with different colors are forme and are the colors for the paint*/
+      /* rectangle will have different color*/
       fill(255, 0, 0);
       rect(x, y, w, h);
       
@@ -43,7 +43,7 @@
       fill(r, g, b) 
       ellipse(mouseX, mouseY, 20, 20)
       
-       /* determines the color of the brush*/
+       /* changes the color of the brush*/
       if (mouseX > x && mouseX < 160 && mouseY < 460 && mouseY > 400) {
         r = 255
         g = 0
